@@ -62,9 +62,10 @@ class Song
     return song
   end
   
-  # def self.create_from_filename
-    
-  # end
+  def self.create_from_filename
+   new_song = self.new_from_filename
+   self.create_by_name(new_song.name)
+  end
   
   # def self.destroy_all
     
