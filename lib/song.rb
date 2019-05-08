@@ -65,9 +65,12 @@ class Song
     
     no_mp3 = filename.chomp('.mp3')
     song_array = no_mp3.split(' - ')
-    #song = self.create_by_name(song_array[1])
-    @name = song_array[1]
-    @artist_name = song_array[0]
+    song_name = song_array[1]
+    song_artist = song_array[0]
+    song = Song.new
+    song.name = song_name
+    song.artist_name = song_artist
+    
   end
   
   # def self.create_from_filename
