@@ -51,17 +51,6 @@ class Song
   end
   
   def self.new_from_filename(filename)
-  #   people = rows.collect do |row|
-  # data = row.split(", ")
-  # name = data[0]
-  # age = data[1]
-  # company = data[2]
-  # person = Person.new
-  # person.name = name
-  # person.age = age
-  # person.company = company
-  # person
-    
     
     no_mp3 = filename.chomp('.mp3')
     song_array = no_mp3.split(' - ')
@@ -70,7 +59,7 @@ class Song
     song = Song.new
     song.name = song_name
     song.artist_name = song_artist
-    
+    binding.pry 
   end
   
   # def self.create_from_filename
